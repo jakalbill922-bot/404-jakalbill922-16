@@ -1,0 +1,27 @@
+image_analysis:
+  edge_density_threshold: 0.08
+  entropy_threshold: 7
+complex_image:
+  sparse_structure:
+    steps: 18
+    cfg_strength: 7.5
+  slat:
+    steps: 22
+    cfg_strength: 3.0
+simple_object:
+  sparse_structure:
+    steps: 15
+    cfg_strength: 6.0
+  slat:
+    steps: 17
+    cfg_strength: 2.0
+refinement:
+  enabled: true
+  min_points: 20
+  max_points: 100000
+  nb_neighbors: 20
+  std_ratio: 2.0
+  timeout_seconds: 5
+generation:
+  seed: 125
+  timeout_seconds: 30
